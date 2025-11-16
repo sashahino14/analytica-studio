@@ -298,8 +298,8 @@ export default function Entries() {
                       {entry.lines.map((line, idx) => (
                         <TableRow key={idx}>
                           <TableCell>{line.accountCode}</TableCell>
-                          <TableCell className="text-right">{line.debit ? `${line.debit.toFixed(2)} €` : "-"}</TableCell>
-                          <TableCell className="text-right">{line.credit ? `${line.credit.toFixed(2)} €` : "-"}</TableCell>
+                          <TableCell className="text-right">{line.debit ? `${line.debit.toFixed(2)} fcfa` : "-"}</TableCell>
+                          <TableCell className="text-right">{line.credit ? `${line.credit.toFixed(2)} fcfa` : "-"}</TableCell>
                           <TableCell>{line.centerCode || "-"}</TableCell>
                         </TableRow>
                       ))}
