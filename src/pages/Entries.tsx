@@ -213,7 +213,6 @@ export default function Entries() {
                                 <SelectValue placeholder="Optionnel" />
                               </SelectTrigger>
                               <SelectContent>
-                                <SelectItem value="">Aucun</SelectItem>
                                 {centers.map((center) => (
                                   <SelectItem key={center.id} value={center.code}>
                                     {center.code} - {center.name}
