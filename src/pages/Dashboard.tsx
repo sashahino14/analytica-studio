@@ -37,7 +37,7 @@ export default function Dashboard() {
         <div>
           <h1 className="text-3xl font-bold text-foreground">Tableau de Bord</h1>
           <p className="text-muted-foreground mt-2">
-            Bienvenue dans ComptaEdu - Votre assistant de comptabilité analytique
+            Bienvenue dans Analytica - Votre assistant de comptabilité analytique
           </p>
         </div>
 
