@@ -73,7 +73,7 @@ export default function Analytics() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold text-foreground">{total.toFixed(2)} €</div>
+              <div className="text-2xl font-bold text-foreground">{total.toFixed(2)} fcfa</div>
             </CardContent>
           </Card>
           <Card>
@@ -94,7 +94,7 @@ export default function Analytics() {
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold text-foreground">
-                {analytics.length > 0 ? (total / analytics.length).toFixed(2) : "0.00"} €
+                {analytics.length > 0 ? (total / analytics.length).toFixed(2) : "0.00"} fcfa
               </div>
             </CardContent>
           </Card>
@@ -119,7 +119,7 @@ export default function Analytics() {
                   <TableRow key={item.centerCode}>
                     <TableCell className="font-medium">{item.centerCode}</TableCell>
                     <TableCell>{item.centerName}</TableCell>
-                    <TableCell className="text-right">{item.totalCharges.toFixed(2)} €</TableCell>
+                    <TableCell className="text-right">{item.totalCharges.toFixed(2)} fcfa</TableCell>
                     <TableCell className="text-right">
                       {total > 0 ? ((item.totalCharges / total) * 100).toFixed(1) : "0.0"} %
                     </TableCell>
