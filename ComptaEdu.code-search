@@ -1,0 +1,27 @@
+# Query: ComptaEdu
+# ContextLines: 1
+
+6 résultats - Fichiers 4
+
+index.html:
+   7      <meta name="description" content="Application de comptabilité analytique simplifiée conçue exclusivement pour les étudiants de la filière Gestion Commerciale ESG. Plan comptable, centres d'analyse, écritures et balance automatique." />
+   8:     <meta name="author" content="ComptaEdu" />
+   9  
+  10:     <meta property="og:title" content="ComptaEdu - Comptabilité Analytique" />
+  11      <meta property="og:description" content="Outil pédagogique de comptabilité analytique pour apprendre les coûts complets et directs" />
+
+src/components/Layout.tsx:
+  22            <Calculator className="h-8 w-8 text-sidebar-primary" />
+  23:           <span className="ml-3 text-xl font-bold text-sidebar-foreground">ComptaEdu</span>
+  24          </div>
+
+src/lib/db.ts:
+  1: // IndexedDB management for ComptaEdu
+  2  
+  3: const DB_NAME = "ComptaEduDB";
+  4  const DB_VERSION = 1;
+
+src/pages/ImportExport.tsx:
+  21        a.href = url;
+  22:       a.download = `comptaedu-export-${new Date().toISOString().split("T")[0]}.json`;
+  23        document.body.appendChild(a);

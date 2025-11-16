@@ -20,7 +20,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <aside className="fixed inset-y-0 left-0 w-64 bg-sidebar border-r border-sidebar-border">
         <div className="flex h-16 items-center px-6 border-b border-sidebar-border">
           <Calculator className="h-8 w-8 text-sidebar-primary" />
-          <span className="ml-3 text-xl font-bold text-sidebar-foreground">ComptaEdu</span>
+          <span className="ml-3 text-xl font-bold text-sidebar-foreground">Analytica</span>
         </div>
         <nav className="flex-1 space-y-1 px-3 py-4">
           {navigation.map((item) => {
