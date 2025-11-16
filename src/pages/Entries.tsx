@@ -160,8 +160,8 @@ export default function Entries() {
                     <TableHeader>
                       <TableRow>
                         <TableHead>Compte</TableHead>
-                        <TableHead>Débit (€)</TableHead>
-                        <TableHead>Crédit (€)</TableHead>
+                        <TableHead>Débit (fcfa)</TableHead>
+                        <TableHead>Crédit (fcfa)</TableHead>
                         <TableHead>Centre</TableHead>
                         <TableHead className="w-16"></TableHead>
                       </TableRow>
