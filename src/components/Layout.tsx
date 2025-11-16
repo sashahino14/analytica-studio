@@ -48,6 +48,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="px-8 py-6">
           {children}
         </div>
+
+        <footer className="px-8 py-4 text-center text-sm text-muted-foreground border-t border-sidebar-border">
+          © {new Date().getFullYear()} Hino Coding Lab (HCL). Tous droits réservés.
+        </footer>
       </main>
     </div>
   );
