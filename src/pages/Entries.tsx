@@ -71,7 +71,7 @@ export default function Entries() {
     const { balanced, totalDebit, totalCredit } = calculateBalance();
 
     if (!balanced) {
-      toast.error(`Écriture non équilibrée ! Débit: ${totalDebit.toFixed(2)}€, Crédit: ${totalCredit.toFixed(2)}€`);
+      toast.error(`Écriture non équilibrée ! Débit: ${totalDebit.toFixed(2)}fcfa, Crédit: ${totalCredit.toFixed(2)}fcfa`);
       return;
     }
 
@@ -240,8 +240,8 @@ export default function Entries() {
 
                 <div className="flex justify-between items-center p-4 bg-muted rounded-lg">
                   <div className="space-y-1">
-                    <div className="text-sm text-muted-foreground">Total Débit: {balance.totalDebit.toFixed(2)} €</div>
-                    <div className="text-sm text-muted-foreground">Total Crédit: {balance.totalCredit.toFixed(2)} €</div>
+                    <div className="text-sm text-muted-foreground">Total Débit: {balance.totalDebit.toFixed(2)} fcfa</div>
+                    <div className="text-sm text-muted-foreground">Total Crédit: {balance.totalCredit.toFixed(2)} fcfa</div>
                   </div>
                   {!balance.balanced && balance.totalDebit + balance.totalCredit > 0 && (
                     <div className="flex items-center text-destructive">
