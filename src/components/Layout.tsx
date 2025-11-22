@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { Calculator, FileText, Target, TrendingUp, BarChart3, Database, Download } from "lucide-react";
+import { Calculator, FileText, Target, TrendingUp, BarChart3, Database, Download, DollarSign } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navigation = [
@@ -8,6 +8,7 @@ const navigation = [
   { name: "Centres d'Analyse", href: "/centers", icon: Target },
   { name: "Écritures", href: "/entries", icon: Calculator },
   { name: "Balance", href: "/balance", icon: TrendingUp },
+  { name: "CAGE", href: "/cage", icon: DollarSign },
   { name: "Analytique", href: "/analytics", icon: Database },
   { name: "Import/Export", href: "/import-export", icon: Download },
 ];
