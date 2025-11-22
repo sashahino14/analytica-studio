@@ -8,6 +8,7 @@ import Accounts from "./pages/Accounts";
 import Centers from "./pages/Centers";
 import Entries from "./pages/Entries";
 import Balance from "./pages/Balance";
+import CAGE from "./pages/CAGE";
 import Analytics from "./pages/Analytics";
 import ImportExport from "./pages/ImportExport";
 import NotFound from "./pages/NotFound";
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/centers" element={<Centers />} />
           <Route path="/entries" element={<Entries />} />
           <Route path="/balance" element={<Balance />} />
+          <Route path="/cage" element={<CAGE />} />
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/import-export" element={<ImportExport />} />
           <Route path="*" element={<NotFound />} />
